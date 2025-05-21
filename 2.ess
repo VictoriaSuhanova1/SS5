@@ -1,4 +1,5 @@
 start
+
 new year number
 new i number
 set year 0 
@@ -59,11 +60,10 @@ if (d > 30)
   end tt
   log string "Мне ">>y>>" лет, ">>p>>" месяцев и ">>d>>" дней."
 else
-  if (d = 30)
-    set d d - 30
-    set p p + 1
-    log string "Мне ">>y>>" лет, 1 месяц и ">>d>>" дней."
+  if (30 > d)
+     log string "Мне ">>y>>" лет и ">>d>>" дней."
 else
- log string "Мне ">>y>>" лет и ">>d>>" дней."
+  log string "Мне ">>y>>" лет и 1 месяц."
+close
 
 finish
