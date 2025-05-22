@@ -17,8 +17,8 @@ loop day (now > 86400000)
 end day
 
 new month number
-
-loop m (day > 30)
+set month 1
+loop m (day > 30) //месяцы
      set day day - 30
      set month month + 1
 end m
